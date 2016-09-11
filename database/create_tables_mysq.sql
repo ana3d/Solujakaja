@@ -1,0 +1,20 @@
+CREATE TABLE lasku(
+	lasku_id INT NOT NULL AUTO_INCREMENT,
+	tapahtuma VARCHAR(255) NOT NULL,
+	huone_1_velka DECIMAL(7,2) NOT NULL,
+	huone_1_maksettu BOOLEAN NOT NULL DEFAULT 0,
+	huone_1_timestamp VARCHAR(255),
+	huone_2_velka DECIMAL(7,2) NOT NULL,
+	huone_2_maksettu BOOLEAN NOT NULL DEFAULT 0,
+	huone_2_timestamp VARCHAR(255),
+	huone_3_velka DECIMAL(7,2) NOT NULL,
+	huone_3_maksettu BOOLEAN NOT NULL DEFAULT 0,
+	huone_3_timestamp VARCHAR(255),
+	huone_4_velka DECIMAL(7,2) NOT NULL,
+	huone_4_maksettu BOOLEAN NOT NULL DEFAULT 0,
+	huone_4_timestamp VARCHAR(255),
+	velkaa_jaljella DECIMAL(7,2) NOT NULL,
+	total DECIMAL(7,2) NOT NULL,
+	isDeleted BOOLEAN NOT NULL DEFAULT 0,
+	PRIMARY KEY (lasku_id)
+)ENGINE=InnoDB;
